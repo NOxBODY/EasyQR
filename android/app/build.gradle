@@ -79,7 +79,7 @@ android {
 
     namespace "com.easyqr"
     defaultConfig {
-        applicationId "com.easyqr"
+        applicationId "com.vibeoncreation.easyqr"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
