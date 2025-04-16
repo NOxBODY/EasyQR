@@ -1,5 +1,3 @@
-// 
-
 # EasyQR
 
 EasyQR is a powerful and easy-to-use QR code scanning application. It is designed to scan QR codes quickly and efficiently while also capturing the user's location during the scanning process. This app is built using React Native and leverages the `react-native-vision-camera` and `@react-native-community/geolocation` libraries to provide a seamless experience on both Android and iOS platforms.
