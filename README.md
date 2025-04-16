@@ -1,97 +1,47 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+// 
 
-# Getting Started
+# EasyQR
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+EasyQR is a powerful and easy-to-use QR code scanning application. It is designed to scan QR codes quickly and efficiently while also capturing the user's location during the scanning process. This app is built using React Native and leverages the `react-native-vision-camera` and `@react-native-community/geolocation` libraries to provide a seamless experience on both Android and iOS platforms.
 
-## Step 1: Start Metro
+## Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **QR Code Scanning**: EasyQR can scan QR codes with high accuracy and speed.
+- **Location Capture**: While scanning a QR code, the app also captures the user's current location (latitude and longitude).
+- **Permission Handling**: The app requests necessary permissions for camera and location access.
+- **Error Handling**: If location access fails, the app still navigates to the result screen with just the QR code value.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
-
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## Screenshots
 
 ### Android
 
-```sh
-# Using npm
-npm run android
+![Android - Home](android/screenshots/Screenshot_Home.jpg)
+*Home Screen*
 
-# OR using Yarn
-yarn android
-```
+![Android - Camera](android/screenshots/Screenshot_Scanner.jpg)
+*Camera Screen*
+
+![Android - Result](android/screenshots/Screenshot_Result.jpg)
+*Result Screen*
 
 ### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+![iOS - Home](ios/screenshots/IMG_Home.PNG)
+*Home Screen*
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+![iOS - Camera](ios/screenshots/IMG_Scanner.PNG)
+*Camera Screen*
 
-```sh
-bundle install
-```
+![iOS - Result](ios/screenshots/IMG_Result.PNG)
+*Result Screen*
 
-Then, and every time you update your native dependencies, run:
+## How It Works
 
-```sh
-bundle exec pod install
-```
+1. **Permission Request**: Permissions for corresponding tasks are checked and if not available asked for before trying to execute the tasks.
+2. **QR Code Scanning**: The app uses the device's camera to scan QR codes. The `useCodeScanner` hook from `react-native-vision-camera` is used to handle the scanning process.
+3. **Location Capture**: Upon successfully scanning a QR code, the app requests the user's current location using the `Geolocation` API from `@react-native-community/geolocation`.
+4. **Navigation**: After obtaining the QR code value and location, the app navigates to the result screen, passing the scanned value and location data.
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## Contributing
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+We welcome contributions to improve EasyQR! If you have any suggestions or find any issues, please open an issue or submit a pull request.
