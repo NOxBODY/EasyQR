@@ -15,25 +15,41 @@ EasyQR is a powerful and easy-to-use QR code scanning application. It is designe
 
 ### Android
 
-![Android - Home](android/screenshots/Screenshot_Home.jpg)
-*Home Screen*
-
-![Android - Camera](android/screenshots/Screenshot_Scanner.jpg)
-*Camera Screen*
-
-![Android - Result](android/screenshots/Screenshot_Result.jpg)
-*Result Screen*
+<table>
+  <tr>
+    <td width="33%">
+      <img src="android/screenshots/Screenshot_Home.jpg" alt="Android - Home" width="100%">
+      <p align="center">Home Screen</p>
+    </td>
+    <td width="33%">
+      <img src="android/screenshots/Screenshot_Scanner.jpg" alt="Android - Camera" width="100%">
+      <p align="center">Camera Screen</p>
+    </td>
+    <td width="33%">
+      <img src="android/screenshots/Screenshot_Result.jpg" alt="Android - Result" width="100%">
+      <p align="center">Result Screen</p>
+    </td>
+  </tr>
+</table>
 
 ### iOS
 
-![iOS - Home](ios/screenshots/IMG_Home.PNG)
-*Home Screen*
-
-![iOS - Camera](ios/screenshots/IMG_Scanner.PNG)
-*Camera Screen*
-
-![iOS - Result](ios/screenshots/IMG_Result.PNG)
-*Result Screen*
+<table>
+  <tr>
+    <td width="33%">
+      <img src="ios/screenshots/IMG_Home.PNG" alt="iOS - Home" width="100%">
+      <p align="center">Home Screen</p>
+    </td>
+    <td width="33%">
+      <img src="ios/screenshots/IMG_Scanner.PNG" alt="iOS - Camera" width="100%">
+      <p align="center">Camera Screen</p>
+    </td>
+    <td width="33%">
+      <img src="ios/screenshots/IMG_Result.PNG" alt="iOS - Result" width="100%">
+      <p align="center">Result Screen</p>
+    </td>
+  </tr>
+</table>
 
 ## How It Works
 
@@ -45,3 +61,7 @@ EasyQR is a powerful and easy-to-use QR code scanning application. It is designe
 ## Contributing
 
 We welcome contributions to improve EasyQR! If you have any suggestions or find any issues, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
