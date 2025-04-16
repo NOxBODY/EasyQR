@@ -59,7 +59,3 @@ EasyQR is a powerful and easy-to-use QR code scanning application. It is designe
 ## Contributing
 
 We welcome contributions to improve EasyQR! If you have any suggestions or find any issues, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
